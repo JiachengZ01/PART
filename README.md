@@ -11,7 +11,7 @@ In the end, we use these pixel-reweighted AEs to train a model.
 PART achieves a notable improvement in accuracy without compromising robustness on CIFAR-10, SVHN and TinyImagenet-200, justifying the necessity to allocate distinct weights to different pixel regions in robust classification. 
 
 #### Figure 1: The proof-of-concept experiment.
-![motivation](/PART/tree/main/images/motivation.jpg)
+![motivation](https://github.com/JiachengZ01/PART/blob/main/images/motivation.jpg)
 We find that fundamental discrepancies exist among different pixel regions. Specifically, we segment each image into four equal-sized regions (i.e., ul, short for upper left; ur, short for upper right; br, short for bottom right; bl, short for bottom left) and adversarially train two ResNet-18 on CIFAR-10 using standard AT with the same experiment settings except for the allocation of $\epsilon$. The robustness is evaluated by $\ell_{\infty}$-norm PGD-20. With the same overall perturbation budgets (i.e., allocate one of the regions to $6/255$ and others to $12/255$), we find that both natural accuracy and adversarial robustness change significantly if the regional allocation on $\epsilon$ is different. For example, by changing $\epsilon_{\rm{br}} = 6/255$ to $\epsilon_{\rm{ul}} = 6/255$, accuracy gains a 1.23\% improvement and robustness gains a 0.94\% improvement.
 
 #### Figure 2: The illustration of our method.
