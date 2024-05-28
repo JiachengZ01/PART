@@ -1,0 +1,5 @@
+matplotlib==3.7.2
+torch==1.13.0
+torchattacks==3.4.0
+torchcam==0.3.2
+torchvision==0.14.0

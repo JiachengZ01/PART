@@ -1,0 +1,10 @@
+/data/
+/checkpoint/
+/output/
+/__pycache__/
+/dataset/__pycache__/
+/models/__pycache__/
+/loss/__pycache__/
+part.slurm
+part_t.slurm
+part_m.slurm
