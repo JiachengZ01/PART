@@ -1,5 +1,4 @@
-# Improving Accuracy-robustness Trade-off via Pixel Reweighted Adversarial Training
-Official PyTorch implementation of the ICML 2024 paper: Improving Accuracy-robustness Trade-off via Pixel Reweighted Adversarial Training (link will be uploaded later).
+# Improving Accuracy-robustness Trade-off via Pixel Reweighted Adversarial Training (ICML 2024)
 
 #### Abstract
 Adversarial training (AT) trains models using adversarial examples (AEs), which are natural images modified with specific perturbations to mislead the model.
