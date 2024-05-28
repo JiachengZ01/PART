@@ -210,12 +210,12 @@ def main():
         print('================================================================')
 
     # evaluation on adversarial examples
-    # print('PGD=============================================================')
-    # eval_test(args, model, device, test_loader, mode='pgd')
-    # print('MMA==============================================================')
-    # eval_test(args, model, device, test_loader, mode='mma')
-    # print('AA==============================================================')
-    # eval_test(args, model, device, test_loader, mode='aa')
+    print('PGD=============================================================')
+    eval_test(args, model, device, test_loader, mode='pgd')
+    print('MMA==============================================================')
+    eval_test(args, model, device, test_loader, mode='mma')
+    print('AA==============================================================')
+    eval_test(args, model, device, test_loader, mode='aa')
 
 if __name__ == '__main__':
     main()

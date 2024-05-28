@@ -81,8 +81,6 @@ def train(args, model, device, train_loader, optimizer, epoch, weighted_eps_list
 
         model.eval()
         weighted_eps = weighted_eps_list[batch_idx]
-        # weight_matrix = craft_weight_matrix(model, data, device, args)
-        # weighted_eps = generate_weighted_eps(weight_matrix, args)
 
         optimizer.zero_grad()
 
@@ -187,12 +185,12 @@ def main():
                        os.path.join(model_dir, 'model-epoch{}.pth'.format(epoch)))
 
     # evaluation on adversarial examples
-    # print('PGD=============================================================')
-    # eval_test(args, model, device, test_loader, mode='pgd')
-    # print('MMA==============================================================')
-    # eval_test(args, model, device, test_loader, mode='mma')
-    # print('AA==============================================================')
-    # eval_test(args, model, device, test_loader, mode='aa')
+    print('PGD=============================================================')
+    eval_test(args, model, device, test_loader, mode='pgd')
+    print('MMA==============================================================')
+    eval_test(args, model, device, test_loader, mode='mma')
+    print('AA==============================================================')
+    eval_test(args, model, device, test_loader, mode='aa')
 
 if __name__ == '__main__':
     main()
