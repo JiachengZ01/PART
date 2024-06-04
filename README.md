@@ -58,7 +58,7 @@ python3 train_eval_part_m.py
 @inproceedings{zhang2024improving,
     title={Improving Accuracy-robustness Trade-off via Pixel Reweighted Adversarial Training}, 
     author={Jiacheng Zhang and Feng Liu and Dawei Zhou and Jingfeng Zhang and Tongliang Liu},
-    booktitle = {International Conference on Machine Learning (ICML)},
+    booktitle={International Conference on Machine Learning (ICML)},
     year={2024}
 }
 ```
