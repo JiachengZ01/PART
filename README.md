@@ -1,8 +1,14 @@
 # Improving Accuracy-robustness Trade-off via Pixel Reweighted Adversarial Training (ICML 2024)
 
-[![arXiv](https://img.shields.io/badge/arXiv-2406.00685-b31b1b.svg)](https://arxiv.org/abs/2406.00685) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+[![Static Badge](https://img.shields.io/badge/Pub-ICML'24-blue)](https://icml.cc/virtual/2024/poster/34324)
+[![arXiv](https://img.shields.io/badge/arXiv-2406.00685-b31b1b.svg)](https://arxiv.org/abs/2406.00685) 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
-This repository is the official PyTorch implementation of the **ICML2024** paper: [Improving Accuracy-robustness Trade-off via Pixel Reweighted Adversarial Training](https://arxiv.org/abs/2406.00685), authored by Jiacheng Zhang, Feng Liu, Dawei Zhou, Jingfeng Zhang, and Tongliang Liu.
+This repository is the official PyTorch implementation of the **ICML'24** paper: 
+
+[Improving Accuracy-robustness Trade-off via Pixel Reweighted Adversarial Training](https://arxiv.org/abs/2406.00685)
+
+**Author List**: Jiacheng Zhang, Feng Liu, Dawei Zhou, Jingfeng Zhang, Tongliang Liu.
 
 #### Abstract
 Adversarial training (AT) trains models using adversarial examples (AEs), which are natural images modified with specific perturbations to mislead the model.
@@ -48,7 +54,7 @@ python3 train_eval_part_m.py
 - Feel free to post any issues via Github.
 
 ### Citation
-```
+```bibtex
 @inproceedings{zhang2024improving,
     title={Improving Accuracy-robustness Trade-off via Pixel Reweighted Adversarial Training}, 
     author={Jiacheng Zhang and Feng Liu and Dawei Zhou and Jingfeng Zhang and Tongliang Liu},
